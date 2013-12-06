@@ -1,0 +1,12 @@
+<%= link_to "Home", root_path %>
+<%=link_to "new task", new_model_path%>
+<title>Plannerapp </title>
+<h1>Task App</h1>
+<p>These Are your Tasks For Today</p>
+
+<ul>
+  <% @task_array.each do |t| %>
+   <li> <%= t %></li>
+   <% end %>
+</ul>
+ 
