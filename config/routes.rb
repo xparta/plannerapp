@@ -1,4 +1,5 @@
 Plannerapp::Application.routes.draw do
+  get "pages/home"
   get "about/pages"
   resources :models
 

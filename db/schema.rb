@@ -20,10 +20,4 @@ ActiveRecord::Schema.define(version: 20131205124315) do
     t.datetime "updated_at"
   end
 
-  create_table "tasks", force: true do |t|
-    t.string   "task_item"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
