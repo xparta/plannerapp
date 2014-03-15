@@ -1,4 +1,5 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" 
+
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -12,10 +13,22 @@
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
+    <ul class="nav nav-pills">
       <li class="active"> <%= link_to"About",about_pages_path%> </li>
+      <li class="active"> <%= link_to"Home",pages_home_path%> </li>
+
     
     </ul>
+    <p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+
     
     <ul class="nav navbar-nav navbar-right">
       <li><a href="http://osrc.dfm.io/xparta">About The Developer</a></li>
@@ -25,9 +38,10 @@
         <li><a href="#">Scheduled Tasks</a></li>
           <li><a href="#">completed tasks</a></li>
           <li class="divider"></li>
-          <li><a href="#">functionality badges</a></li>
+          <li><a href="#">badges</a></li>
         </ul>
       </li>
     </ul>
+    
   </div><!-- /.navbar-collapse -->
 </nav>

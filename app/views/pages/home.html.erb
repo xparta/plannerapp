@@ -1,68 +1,78 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+<html>
+<head>
+    <title>Bootstrap In Practice - Landing Page Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+html {
+            background: url(img/6133364748_89f2365922_o.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
 
-    <title>Cover Template for Bootstrap</title>
+        body {
+            padding-top: 20px;
+            font-size: 16px;
+            font-family: "Open Sans",serif;
+            background: transparent;
+        }
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        h1 {
+            font-family: "Abel", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+        }
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+        /* Override B3 .panel adding a subtly transparent background */
+        .panel {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
 
-   
-  </head>
+        .margin-base-vertical {
+            margin: 40px 0;
+        }
+    </style>
+</head>
 
-  <body>
 
-    <div class="site-wrapper">
+<body>
+      <h1> Do you have plans ?</h1>
+ <div><blockquote>
+  <p>Plans are the building steps to sucess,fail to plan and you plan to fail.</p>
+  <footer>Newton Robert <cite title="Source Title">The truth</cite></footer>
+</blockquote></div> 
 
-      <div class="site-wrapper-inner">
+    <p>
+        Do you want to be more efficient ?
+    </p> 
+    
+    <p>
+        Do you have loads of tasks and plans ?
+    </p>
+    <p>
+        Are you pre-occupied with dailly unorganised schedules and you feel the inconvenience ?
+    </p>
 
-        <div class="cover-container">
+    <p>
+        <strong>plannerapp</strong> is your <strong>answer </strong> sighn up below and watch your time schedule transform.
+    </p>
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
+    <div><form action="/mailing-list" method="post">
+        <p class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control input-lg" name="email" placeholder="tomarobaski@gmail.com" />
+        </p>
+        <p class="help-block"><small>We won't send you spam. Unsubscribe at any time.</small></p>
+        <p>
+            <button type="submit" class="btn btn-success btn-lg">Keep me posted</button>
+        </p>
+        </span>
+    </form></div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
-  </body>
+</body>
 </html>

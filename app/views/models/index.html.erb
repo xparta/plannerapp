@@ -17,8 +17,8 @@
         <td><%= model.Task %></td>
         <td><%= model.task_item %></td>
         <td><%= link_to 'Show', model %></td>
-        <td><%= link_to 'Modify', edit_model_path(model) %></td>
-        <td><%= link_to 'Destroy', model, method: :delete, data: { confirm: 'get Done With It already ' } %></td>
+        <td><%= link_to 'edit', edit_model_path(model) %></td>
+        <td><%= link_to 'Delete', model, method: :delete, data: { confirm: 'get Done With It already ' } %></td>
       </tr>
     <% end %>
   </tbody>
