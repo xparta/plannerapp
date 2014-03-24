@@ -1,6 +1,7 @@
 <h1>Listing Task</h1>
 
-<table>
+<table class="table table-hover">
+
   <thead>
     <tr>
       <th>Task</th>
@@ -18,7 +19,7 @@
         <td><%= model.task_item %></td>
         <td><%= link_to 'Show', model %></td>
         <td><%= link_to 'edit', edit_model_path(model) %></td>
-        <td><%= link_to 'Delete', model, method: :delete, data: { confirm: 'get Done With It already ' } %></td>
+        <td><%= link_to 'Delete', model, method: :delete, data: { confirm: 'To hell with this? ' } %></td>
       </tr>
     <% end %>
   </tbody>
